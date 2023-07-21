@@ -1,3 +1,28 @@
+<?php 
+
+echo $nombre . '<br>';
+echo $telefono . '<br>';
+echo $lugar . '<br>';
+echo $fecha_evento . '<br>';
+echo $hora_evento . '<br>';
+echo $ubicacion . '<br>';
+echo $primer_producto . '<br>';
+echo $cantidad_1er_producto . '<br>';
+echo $segundo_producto . '<br>';
+echo $cantidad_2do_producto . '<br>';
+echo $tercer_producto . '<br>';
+echo $cantidad_3er_producto . '<br>';
+echo $cuarto_producto . '<br>';
+echo $cantidad_4to_producto . '<br>';
+echo $quinto_producto . '<br>';
+echo $cantidad_5to_producto . '<br>';
+echo $sexto_producto . '<br>';
+echo $cantidad_6to_producto . '<br>';
+echo $septimo_producto . '<br>';
+echo $cantidad_7mo_producto . '<br>';
+echo $errores;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,40 +49,40 @@
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Nombre del cliente</label>
-                        <input class="mitad" type="text" placeholder="Nombre:">
+                        <input name="nombre" class="mitad" type="text" placeholder="Nombre:" value="<?php if(!$enviado && isset($nombre)) echo $nombre; ?>">
                     </div>
                     <div class="contenedor-variables">
                         <label>Teléfono</label>
-                        <input class="mitad" type="tel" placeholder="Teléfono:">
+                        <input name="telefono" class="mitad" type="tel" placeholder="Teléfono:" value="<?php if(!$enviado && isset($telefono)) echo $telefono; ?>">
                     </div>
                 </div>
                 
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Lugar del evento</label>
-                        <input class="dos-cuartos" type="text" placeholder="Lugar:">
+                        <input name="lugar" class="dos-cuartos" type="text" placeholder="Lugar:">
                     </div>
                     <div class="contenedor-variables">
                         <label>Fecha del evento</label>
-                        <input class="un-cuarto" type="date">
+                        <input name="fecha_evento" class="un-cuarto" type="date">
                     </div>
                     <div class="contenedor-variables">
                         <label>Hora de inicio</label>
-                        <input class="un-cuarto" type="time">
+                        <input name="hora_evento" class="un-cuarto" type="time">
                     </div>
                 </div>
                 
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Ubicación del evento</label>
-                        <input class="uno" type="text" placeholder="Ubicación:">
+                        <input name="ubicacion" class="uno" type="text" placeholder="Ubicación:">
                     </div>
                         <!--<input type="submit" value="Registrar" class="btn-form">-->
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Productos</label>
-                        <select class="tres-cuartos">
+                        <select name="primer_producto" class="tres-cuartos">
                             <option value="">Selecciona 1er producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -70,13 +95,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <label>Cantidad</label>
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_primer_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Segundo producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="segundo_producto" class="tres-cuartos">
                             <option value="">Selecciona 2do producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -89,13 +114,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_segundo_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Tercer producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="tercer_producto" class="tres-cuartos">
                             <option value="">Selecciona 3er producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -108,13 +133,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_tercer_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Cuarto producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="cuarto_producto" class="tres-cuartos">
                             <option value="">Selecciona 4to producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -127,13 +152,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_cuarto_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Quinto producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="quinto_producto" class="tres-cuartos">
                             <option value="">Selecciona 5to producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -146,13 +171,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_quinto_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Sexto producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="sexto_producto" class="tres-cuartos">
                             <option value="">Selecciona 6to producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -165,13 +190,13 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_sexto_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <!--<label>Septimo producto</label>-->
-                        <select class="tres-cuartos">
+                        <select name="septimo_producto" class="tres-cuartos">
                             <option value="">Selecciona 7mo producto...</option>
                             <option value="Arreglo de mesa chico">Arreglo de mesa chico</option>
                             <option value="Arreglo de mesa mediano">Arreglo de mesa mediano</option>
@@ -184,11 +209,11 @@
                     </div>
                     <div class="contenedor-variables">
                         <!--<label>Cantidad</label>-->
-                        <input class="un-cuarto" type="number" placeholder="Cantidad:">
+                        <input name="cantidad_septimo_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
                 <div class="contenedor-btn">
-                    <input type="submit" value="Registrar" class="btn-form">
+                    <input name="submit" type="submit" value="Registrar" class="btn-form">
                 </div>
             </form>
         </section>
