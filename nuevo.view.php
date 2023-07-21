@@ -1,28 +1,3 @@
-<?php 
-
-// echo $nombre . '<br>';
-// echo $telefono . '<br>';
-// echo $lugar . '<br>';
-// echo $fecha_evento . '<br>';
-// echo $hora_evento . '<br>';
-// echo $ubicacion . '<br>';
-// echo $primer_producto . '<br>';
-// echo $cantidad_1er_producto . '<br>';
-// echo $segundo_producto . '<br>';
-// echo $cantidad_2do_producto . '<br>';
-// echo $tercer_producto . '<br>';
-// echo $cantidad_3er_producto . '<br>';
-// echo $cuarto_producto . '<br>';
-// echo $cantidad_4to_producto . '<br>';
-// echo $quinto_producto . '<br>';
-// echo $cantidad_5to_producto . '<br>';
-// echo $sexto_producto . '<br>';
-// echo $cantidad_6to_producto . '<br>';
-// echo $septimo_producto . '<br>';
-// echo $cantidad_7mo_producto . '<br>';
-// echo $errores;
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
