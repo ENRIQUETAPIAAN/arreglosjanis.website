@@ -82,9 +82,6 @@ if(isset($_POST['submit'])){
     }
 
     if(!$errores){
-
-        
-
         $enviado = true;
     }
 }

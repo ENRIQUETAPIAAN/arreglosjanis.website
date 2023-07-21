@@ -1,26 +1,26 @@
 <?php 
 
-echo $nombre . '<br>';
-echo $telefono . '<br>';
-echo $lugar . '<br>';
-echo $fecha_evento . '<br>';
-echo $hora_evento . '<br>';
-echo $ubicacion . '<br>';
-echo $primer_producto . '<br>';
-echo $cantidad_1er_producto . '<br>';
-echo $segundo_producto . '<br>';
-echo $cantidad_2do_producto . '<br>';
-echo $tercer_producto . '<br>';
-echo $cantidad_3er_producto . '<br>';
-echo $cuarto_producto . '<br>';
-echo $cantidad_4to_producto . '<br>';
-echo $quinto_producto . '<br>';
-echo $cantidad_5to_producto . '<br>';
-echo $sexto_producto . '<br>';
-echo $cantidad_6to_producto . '<br>';
-echo $septimo_producto . '<br>';
-echo $cantidad_7mo_producto . '<br>';
-echo $errores;
+// echo $nombre . '<br>';
+// echo $telefono . '<br>';
+// echo $lugar . '<br>';
+// echo $fecha_evento . '<br>';
+// echo $hora_evento . '<br>';
+// echo $ubicacion . '<br>';
+// echo $primer_producto . '<br>';
+// echo $cantidad_1er_producto . '<br>';
+// echo $segundo_producto . '<br>';
+// echo $cantidad_2do_producto . '<br>';
+// echo $tercer_producto . '<br>';
+// echo $cantidad_3er_producto . '<br>';
+// echo $cuarto_producto . '<br>';
+// echo $cantidad_4to_producto . '<br>';
+// echo $quinto_producto . '<br>';
+// echo $cantidad_5to_producto . '<br>';
+// echo $sexto_producto . '<br>';
+// echo $cantidad_6to_producto . '<br>';
+// echo $septimo_producto . '<br>';
+// echo $cantidad_7mo_producto . '<br>';
+// echo $errores;
 
 ?>
 <!DOCTYPE html>
@@ -60,22 +60,22 @@ echo $errores;
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Lugar del evento</label>
-                        <input name="lugar" class="dos-cuartos" type="text" placeholder="Lugar:">
+                        <input name="lugar" class="dos-cuartos" type="text" placeholder="Lugar:" value="<?php if(!$enviado && isset($lugar)) echo $lugar; ?>">
                     </div>
                     <div class="contenedor-variables">
                         <label>Fecha del evento</label>
-                        <input name="fecha_evento" class="un-cuarto" type="date">
+                        <input name="fecha_evento" class="un-cuarto" type="date" value="<?php if(!$enviado && isset($fecha_evento)) echo $fecha_evento; ?>">
                     </div>
                     <div class="contenedor-variables">
                         <label>Hora de inicio</label>
-                        <input name="hora_evento" class="un-cuarto" type="time">
+                        <input name="hora_evento" class="un-cuarto" type="time" value="<?php if(!$enviado && isset($hora_evento)) echo $hora_evento; ?>">
                     </div>
                 </div>
                 
                 <div class="contenedor-tarjetas">
                     <div class="contenedor-variables">
                         <label>Ubicación del evento</label>
-                        <input name="ubicacion" class="uno" type="text" placeholder="Ubicación:">
+                        <input name="ubicacion" class="uno" type="text" placeholder="Ubicación:" value="<?php if(!$enviado && isset($ubicacion)) echo $ubicacion; ?>">
                     </div>
                         <!--<input type="submit" value="Registrar" class="btn-form">-->
                 </div>
@@ -212,6 +212,15 @@ echo $errores;
                         <input name="cantidad_septimo_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
+                <?php if(!$enviado): ?>
+                        <div class="fail alert">
+                            <?php echo $errores; ?>
+                        </div>
+                    <?php elseif($enviado): ?>
+                        <div class="sucess alert">
+                            <p>El evento se a registrado correctamente.</p>
+                        </div>
+                    <?php endif; ?>
                 <div class="contenedor-btn">
                     <input name="submit" type="submit" value="Registrar" class="btn-form">
                 </div>

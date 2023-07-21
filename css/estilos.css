@@ -371,3 +371,11 @@ hr{
     display: flex;
     justify-content: center;
 }
+.fail{
+    font-size: 1.3rem;
+    color: #ff4747;
+}
+.sucess p{
+    font-size: 1.3rem;
+    color: darkgreen;
+}
