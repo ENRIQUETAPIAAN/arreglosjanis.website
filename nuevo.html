@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Administración de eventos</h1>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+    </header>
+    <main>
+        <section class="tarjeta-evento-form padding">
+            <h2 class="titulo">Agregar Nuevo Evento</h2>
+            <form method="post">
+                <div class="contenedor-tarjetas">
+                    <div class="contenedor-variables">
+                        <label>Nombre del cliente</label>
+                        <input class="mitad" type="text" placeholder="Nombre:">
+                    </div>
+                    <div class="contenedor-variables">
+                        <label>Teléfono</label>
+                        <input class="mitad" type="tel" placeholder="Teléfono:">
+                    </div>
+                </div>
+                
+                <div class="contenedor-tarjetas">
+                    <div class="contenedor-variables">
+                        <label>Lugar del evento</label>
+                        <input class="tres" type="text" placeholder="Lugar:">
+                    </div>
+                    <div class="contenedor-variables">
+                        <label>Fecha del evento</label>
+                        <input class="tres" type="date">
+                    </div>
+                    <div class="contenedor-variables">
+                        <label>Hora de inicio</label>
+                        <input class="tres" type="time">
+                    </div>
+                </div>
+                
+                <div class="contenedor-tarjetas">
+                    <div class="contenedor-variables">
+                        <label>Ubicación del evento</label>
+                        <input class="uno" type="text" placeholder="Ubicación:">
+                    </div>
+                        <input type="submit" value="Registrar" class="btn-form">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,348 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    background: #F1F1F1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+header{
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    background: #FF4747;
+    color: #fff;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+    position: fixed;
+}
+.contenedor{
+    width: 85%;
+    max-width: 100rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-border{
+    width: 85%;
+    max-width: 100rem;
+    height: 100%;
+    padding: 2rem 0;
+    align-items: center;
+    margin: auto;
+}
+.contenedor h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+header .contenedor a{
+    width: 15rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 1.1rem;
+    text-decoration: none;
+    color: #000;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+}
+header .contenedor a:hover{
+    background: #F1F1F1;
+}
+main{
+    padding-top: 10rem;
+    width: 97%;
+    max-width: 100rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: #4B4B4B;
+}
+main a{
+    text-decoration: none;
+    color: #000;
+}
+main p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.tarjeta-evento{
+    width: 100%;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 5px rgba(0,0,0, .5);
+}
+.padding{
+    padding: 2rem;
+}
+.variable{
+    color: #A8A8A8;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.contenedor-tarjetas-tres{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contenedor-tarjetas{
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+}
+.top{
+    margin-top: 1.5rem;
+}
+.contenedor-tarjetas-tres .btn-editar{
+    width: 6.2rem;
+    height: 6.2rem;
+    padding: .5rem;
+    align-items: center;
+    background-color: #FF4747;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+    border-radius: 20rem;
+}
+.contenedor-tarjetas-tres .btn-editar:hover{
+    background: #BB1F35;
+}
+.precio{
+    font-size: 3rem;
+    color: #A8A8A8;
+    font-weight: bold;
+}
+.paginacion{
+    width: 100%;
+    text-align: center;
+}
+.contenedor-paginacion{
+    padding: 6rem;
+    width: 90%;
+    max-width: 100rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.paginacion ul{
+    list-style: none;
+}
+.contenedor-paginacion a{
+    padding: 1.5rem 2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    background: #FF4747;
+    color: #fff;
+}
+.contenedor-paginacion a:hover{
+    background: #BB1F35;
+}
+.contenedor-paginacion .disable{
+    background: #A8A8A8;
+	cursor: not-allowed;
+}
+.contenedor-paginacion .active{
+    background: #BB1F35;
+}
+
+/*pagina de documento*/
+.contenedor-documento{
+    padding-top: .1rem;
+}
+.tarjeta-evento .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tarjeta-evento .alinear-derecha{
+    text-align: right;
+}
+.contenedor-costo{
+    padding-bottom: 1rem;
+}
+.contenedor-costo .contenedor-variables{
+    text-align: center;
+}
+.contenedor .contenedor-variables{
+    width: 50%;
+}
+.contenedor .contenedor-variables-total{
+    width: 100%;
+}
+.contenedor .izquierda{
+    padding: 1rem 0;
+}
+.contenedor .derecha{
+    padding: 1rem 2.5rem;
+    border-left: .2rem solid #A8A8A8;
+}
+.seccion-documento-gris{
+    width: 100%;
+    padding: 4rem 0 8rem 0;
+    background: #F1F1F1;
+}
+.seccion-documento-gris p{
+    margin: .1rem 0;
+}
+.contenedor-contrato{
+    width: 85%;
+    max-width: 100rem;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contrato{
+    color: #A8A8A8;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.espacio{
+    padding: 2.5rem 0;
+}
+.espacio-abajo{
+    padding: 0 0 25rem 0;
+}
+hr{
+    width: 100%;
+    border: solid .1rem #A8A8A8;
+}
+.contenedor-costo .contenedor-variables .precio-doc{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.titulo{
+    padding: 4rem 0;
+}
+.total{
+    width: 100%;
+}
+.btn-atras{
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    padding-top: .5rem;
+    background-color: #FF4747;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+    border-radius: 50rem;
+    z-index:100;
+    bottom:20rem;
+    left:18rem;
+    text-align: center;
+}
+.btn-editar-float{
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    padding-top: .5rem;
+    background-color: #FF4747;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+    border-radius: 50rem;
+    z-index:100;
+    bottom:20rem;
+    right:18rem;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .btn-editar-float{
+        right: .5rem;
+    }
+    .btn-atras{
+        left: .5rem;
+    }
+}
+/*Nuevo*/
+.tarjeta-evento-form form{
+    width: 80%;
+    margin: auto;
+}
+.contenedor-variables label{
+    font-size: 1.8rem;
+    color: #4B4B4B;
+}
+.contenedor-variables .uno{
+    border-radius: 5rem;
+    border: .1rem solid #A8A8A8;
+    padding: .8rem;
+    width: 33rem;
+    margin-top: .5rem;
+}
+.contenedor-variables .mitad{
+    border-radius: 5rem;
+    border: .1rem solid #A8A8A8;
+    padding: .8rem;
+    width: 24rem;
+    margin-top: .5rem;
+}
+.contenedor-variables .tres{
+    border-radius: 5rem;
+    border: .1rem solid #A8A8A8;
+    padding: .8rem;
+    width: 16rem;
+    margin-top: .5rem;
+}
+.tarjeta-evento-form{
+    width: 70%;
+    margin: 1rem auto;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: .6rem 1rem 1rem 0rem rgba(0,0,0,0.08);
+}
+.titulo{
+    width: 100%;
+    text-align: center;
+    color: #4B4B4B;
+    margin-bottom: 1rem;
+}
+.contenedor-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-tarjetas .contenedor-variables {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.btn-form{
+    width: 15rem;
+    height: 5rem;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    background: #FF4747;
+    font-size: 1.8rem;
+    color: #fff;
+    border: .1rem solid #ff4747;
+    cursor: pointer;
+}
+.btn-form:hover{
+    border: .3rem solid #4B4B4B;
+}
+.contenedor-login{
+    width: 100%;
+    min-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-login .contenedor-formulario-login{
+    width: 45%;
+    background: #BB1F35;
+}
+.contenedor-login .contenedor-imagen{
+    width: 55%;
+    background: #4B4B4B;
+}
+.contenedor-login .contenedor-img img{
+    width: 100%;
+}
