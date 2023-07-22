@@ -187,13 +187,27 @@
                         <input name="cantidad_septimo_producto" class="un-cuarto" type="number" placeholder="Cantidad:">
                     </div>
                 </div>
+                <div class="contenedor-tarjetas">
+                    <div class="contenedor-variables">
+                        <label>Estatus del evento</label>
+                        <select name="estatus_evento" class="tres-cuartos">
+                            <option value="">Selecciona...</option>
+                            <option value="Registrado">Registrado</option>
+                            <option value="Pago parcial">Pago parcial</option>
+                            <option value="Pago completo">Pago completo</option>
+                            <option value="Realizado">Realizado</option>
+                            <option value="Cancelado">Cancelado</option>
+                        </select>
+                    </div>
+                </div>
                 <?php if(!$enviado): ?>
                         <div class="fail alert">
                             <?php echo $errores; ?>
                         </div>
                     <?php elseif($enviado): ?>
                         <div class="sucess alert">
-                            <p>El evento se a registrado correctamente.</p>
+                            <p>El evento se a registrado correctamente, el identificador del evento es:</p>
+                            <?php echo $identificador_evento; ?>
                         </div>
                     <?php endif; ?>
                 <div class="contenedor-btn">
