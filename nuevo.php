@@ -196,9 +196,9 @@ if(isset($_POST['submit'])){
         $mensaje_preparado .= "Hora del evento: $hora_evento<br>";
         $mensaje_preparado .= "Ubicación del evento: $ubicacion<br>";
         $mensaje_preparado .= "Estatus del evento: $estatus_evento<br>";
-        $mensaje_preparado .= "Arreglos: $cantidad_7mo_producto $septimo_producto.";
+        $mensaje_preparado .= "Arreglos: $cantidad_1er_producto $primer_producto, $cantidad_2do_producto $segundo_producto, $cantidad_3er_producto $tercer_producto, $cantidad_4to_producto $cuarto_producto, $cantidad_5to_producto $quinto_producto, $cantidad_6to_producto $sexto_producto, $cantidad_7mo_producto $septimo_producto.";
 
-        //mail($enviar_a, $asunto, $mensaje_preparado);
+        mail($enviar_a, $asunto, $mensaje_preparado);
         $enviado = true;
     }
 }
