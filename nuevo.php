@@ -140,11 +140,65 @@ if(isset($_POST['submit'])){
                     ':cantidad_producto' => $cantidad_3er_producto
                 ));
             }
-        
-            // header('Location: index.html');
+            if(!empty($cuarto_producto) and !empty($cantidad_4to_producto)){
+                $statement = $conexion->prepare(
+                    'INSERT INTO tb_factura (id_factura, identificador_evento, nombre_producto, cantidad_producto) 
+                    VALUES (null, :identificador_evento, :nombre_producto, :cantidad_producto)');
+
+                $statement->execute(array(
+                    ':identificador_evento' => $identificador_evento,
+                    ':nombre_producto' => $cuarto_producto,
+                    ':cantidad_producto' => $cantidad_4to_producto
+                ));
+            }
+            if(!empty($quinto_producto) and !empty($cantidad_5to_producto)){
+                $statement = $conexion->prepare(
+                    'INSERT INTO tb_factura (id_factura, identificador_evento, nombre_producto, cantidad_producto) 
+                    VALUES (null, :identificador_evento, :nombre_producto, :cantidad_producto)');
+
+                $statement->execute(array(
+                    ':identificador_evento' => $identificador_evento,
+                    ':nombre_producto' => $quinto_producto,
+                    ':cantidad_producto' => $cantidad_5to_producto
+                ));
+            }
+            if(!empty($sexto_producto) and !empty($cantidad_6to_producto)){
+                $statement = $conexion->prepare(
+                    'INSERT INTO tb_factura (id_factura, identificador_evento, nombre_producto, cantidad_producto) 
+                    VALUES (null, :identificador_evento, :nombre_producto, :cantidad_producto)');
+
+                $statement->execute(array(
+                    ':identificador_evento' => $identificador_evento,
+                    ':nombre_producto' => $sexto_producto,
+                    ':cantidad_producto' => $cantidad_6to_producto
+                ));
+            }
+            if(!empty($septimo_producto) and !empty($cantidad_7mo_producto)){
+                $statement = $conexion->prepare(
+                    'INSERT INTO tb_factura (id_factura, identificador_evento, nombre_producto, cantidad_producto) 
+                    VALUES (null, :identificador_evento, :nombre_producto, :cantidad_producto)');
+
+                $statement->execute(array(
+                    ':identificador_evento' => $identificador_evento,
+                    ':nombre_producto' => $septimo_producto,
+                    ':cantidad_producto' => $cantidad_7mo_producto
+                ));
+            }
         }
 
+        $enviar_a = 'tapiaa.antunes@outlook.com';
+        $asunto = 'Registro de nuevo evento desde aplicacion web.';
+        $mensaje_preparado = "Identificador del evento: $identificador_evento <br>";
+        $mensaje_preparado .= "Nombre del cliente: $nombre<br>";
+        $mensaje_preparado .= "Teléfono del cliente: $telefono<br>";
+        $mensaje_preparado .= "Lugar del evento: $lugar<br>";
+        $mensaje_preparado .= "Fecha del evento: $fecha_evento<br>";
+        $mensaje_preparado .= "Hora del evento: $hora_evento<br>";
+        $mensaje_preparado .= "Ubicación del evento: $ubicacion<br>";
+        $mensaje_preparado .= "Estatus del evento: $estatus_evento<br>";
+        $mensaje_preparado .= "Arreglos: $cantidad_7mo_producto $septimo_producto.";
 
+        //mail($enviar_a, $asunto, $mensaje_preparado);
         $enviado = true;
     }
 }
