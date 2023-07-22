@@ -188,15 +188,15 @@ if(isset($_POST['submit'])){
 
         $enviar_a = 'tapiaa.antunes@outlook.com';
         $asunto = 'Registro de nuevo evento desde aplicacion web.';
-        $mensaje_preparado = "Identificador del evento: $identificador_evento <br>";
-        $mensaje_preparado .= "Nombre del cliente: $nombre<br>";
-        $mensaje_preparado .= "Teléfono del cliente: $telefono<br>";
-        $mensaje_preparado .= "Lugar del evento: $lugar<br>";
-        $mensaje_preparado .= "Fecha del evento: $fecha_evento<br>";
-        $mensaje_preparado .= "Hora del evento: $hora_evento<br>";
-        $mensaje_preparado .= "Ubicación del evento: $ubicacion<br>";
-        $mensaje_preparado .= "Estatus del evento: $estatus_evento<br>";
-        $mensaje_preparado .= "Arreglos: $cantidad_1er_producto $primer_producto, $cantidad_2do_producto $segundo_producto, $cantidad_3er_producto $tercer_producto, $cantidad_4to_producto $cuarto_producto, $cantidad_5to_producto $quinto_producto, $cantidad_6to_producto $sexto_producto, $cantidad_7mo_producto $septimo_producto.";
+        $mensaje_preparado = "Identificador del evento: $identificador_evento \n";
+        $mensaje_preparado .= "Nombre del cliente: $nombre \n";
+        $mensaje_preparado .= "Teléfono del cliente: $telefono \n";
+        $mensaje_preparado .= "Lugar del evento: $lugar \n";
+        $mensaje_preparado .= "Fecha del evento: $fecha_evento \n";
+        $mensaje_preparado .= "Hora del evento: $hora_evento \n";
+        $mensaje_preparado .= "Ubicación del evento: $ubicacion \n";
+        $mensaje_preparado .= "Estatus del evento: $estatus_evento \n";
+        $mensaje_preparado .= "Arreglos: $cantidad_1er_producto $primer_producto\n $cantidad_2do_producto $segundo_producto\n $cantidad_3er_producto $tercer_producto\n $cantidad_4to_producto $cuarto_producto\n $cantidad_5to_producto $quinto_producto\n $cantidad_6to_producto $sexto_producto\n $cantidad_7mo_producto $septimo_producto.";
 
         mail($enviar_a, $asunto, $mensaje_preparado);
         $enviado = true;
