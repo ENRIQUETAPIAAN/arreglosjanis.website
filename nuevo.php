@@ -196,7 +196,7 @@ if(isset($_POST['submit'])){
         $mensaje_preparado .= "Hora del evento: $hora_evento \n";
         $mensaje_preparado .= "Ubicación del evento: $ubicacion \n";
         $mensaje_preparado .= "Estatus del evento: $estatus_evento \n";
-        $mensaje_preparado .= "Arreglos: $cantidad_1er_producto $primer_producto\n $cantidad_2do_producto $segundo_producto\n $cantidad_3er_producto $tercer_producto\n $cantidad_4to_producto $cuarto_producto\n $cantidad_5to_producto $quinto_producto\n $cantidad_6to_producto $sexto_producto\n $cantidad_7mo_producto $septimo_producto.";
+        $mensaje_preparado .= "Arreglos: \n $cantidad_1er_producto $primer_producto\n $cantidad_2do_producto $segundo_producto\n $cantidad_3er_producto $tercer_producto\n $cantidad_4to_producto $cuarto_producto\n $cantidad_5to_producto $quinto_producto\n $cantidad_6to_producto $sexto_producto\n $cantidad_7mo_producto $septimo_producto.";
 
         mail($enviar_a, $asunto, $mensaje_preparado);
         $enviado = true;
