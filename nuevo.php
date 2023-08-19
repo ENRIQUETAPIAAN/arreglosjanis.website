@@ -90,6 +90,7 @@ if(isset($_POST['submit'])){
         if(!$conexion){
 	        header('Location: ../nuevo.php');
         }
+        
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $statement = $conexion->prepare(
